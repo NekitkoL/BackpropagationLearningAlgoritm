@@ -1,4 +1,5 @@
 #include "StopWatch.h"
+#include "Types.h"
 #include <math.h>
 #include <Windows.h>
 
@@ -47,7 +48,7 @@ void CalcElapsedMilliSeconds(StopWatch* stopWatch)
 }
 
 
-int ToTimeIntervalStruct(StopWatch* stopWatch, TimeInterval* timeInterval)
+void ToTimeIntervalStruct(StopWatch* stopWatch, TimeInterval* timeInterval)
 {
 	uint64 milliseconds = stopWatch->ElapsedMilliseconds;
 

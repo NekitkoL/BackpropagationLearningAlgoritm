@@ -1,8 +1,8 @@
 #ifndef _NEURON_H_
 #define _NEURON_H_
 
-typedef unsigned int uint;
-typedef double (*ActivationFunctionPtr)(double);
+#include "Helpers.h"
+#include "Types.h"
 
 typedef struct _neuron 
 {
@@ -31,7 +31,7 @@ typedef struct _neuron
 
 void Adder(Neuron* neuron, double* inputVector);
 void ComputeNeuronOutput(Neuron* neuron, double* inputVector);
-Neuron* CreateNeuron(int inputDimension, ActivationFunctionPtr actFunction);
+Neuron* CreateNeuron(uint inputDimension, ActivationFunctionPtr actFunction);
 void DisposeNeuron(Neuron* neuron);
 
 #endif

@@ -1,10 +1,11 @@
 #include "Neuron.h"
 #include "Helpers.h"
+#include "Types.h"
 
-Neuron* CreateNeuron(int inputDimension, ActivationFunctionPtr actFunction)
+Neuron* CreateNeuron(uint inputDimension, ActivationFunctionPtr actFunction)
 {
 	Neuron* newNeuron = ALLOC_OBJ(Neuron);
-	int i;
+	uint i;
 
 	newNeuron->actFunction = actFunction;
 	newNeuron->InputDimension = inputDimension;

@@ -65,10 +65,13 @@
     <ClInclude Include="Helpers.h" />
     <ClInclude Include="Neuron.h" />
     <ClInclude Include="StopWatch.h" />
+    <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="Neuron.c" />
+    <ClCompile Include="SpeedTests.cpp" />
+    <ClCompile Include="SpeedTests.h" />
     <ClCompile Include="StopWatch.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

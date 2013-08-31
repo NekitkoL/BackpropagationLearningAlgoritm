@@ -1,7 +1,7 @@
 #ifndef _STOPWATCH_H_
 #define _STOPWATCH_H_
 
-typedef unsigned long long uint64;
+#include "Types.h"
 
 typedef struct _stopWatch 
 {
@@ -24,6 +24,6 @@ void Reset(StopWatch* stopWatch);
 void Start(StopWatch* stopWatch);
 void Stop(StopWatch* stopWatch);
 void CalcElapsedMilliSeconds(StopWatch* stopWatch);
-int ToTimeIntervalStruct(StopWatch* stopWatch, TimeInterval* timeInterval);
+void ToTimeIntervalStruct(StopWatch* stopWatch, TimeInterval* timeInterval);
 
 #endif
