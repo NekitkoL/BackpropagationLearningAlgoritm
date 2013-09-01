@@ -30,7 +30,7 @@ typedef struct _neuron
 
 
 void Adder(Neuron* neuron, double* inputVector);
-void ComputeNeuronOutput(Neuron* neuron, double* inputVector);
+double ComputeNeuronOutput(Neuron* neuron, double* inputVector);
 Neuron* CreateNeuron(uint inputDimension, ActivationFunctionPtr actFunction);
 void DisposeNeuron(Neuron* neuron);
 

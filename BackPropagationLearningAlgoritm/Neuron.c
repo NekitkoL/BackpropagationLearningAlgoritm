@@ -37,7 +37,7 @@ void Adder(Neuron* neuron, double* inputVector)
 }
 
 
-void ComputeNeuronOutput(Neuron* neuron, double* inputVector)
+double ComputeNeuronOutput(Neuron* neuron, double* inputVector)
 {
 	Adder(neuron, inputVector);
 	neuron->LastOutput = neuron->actFunction(neuron->LastSumValue);

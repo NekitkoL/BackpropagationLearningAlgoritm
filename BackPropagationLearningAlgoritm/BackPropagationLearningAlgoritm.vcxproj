@@ -64,12 +64,14 @@
   <ItemGroup>
     <ClInclude Include="ActivationFunctions.h" />
     <ClInclude Include="Helpers.h" />
+    <ClInclude Include="Layer.h" />
     <ClInclude Include="Neuron.h" />
     <ClInclude Include="StopWatch.h" />
     <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActivationFunctions.c" />
+    <ClCompile Include="Layer.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Neuron.c" />
     <ClCompile Include="SpeedTests.c" />
