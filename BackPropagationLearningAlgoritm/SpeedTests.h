@@ -5,5 +5,6 @@
 #include "Types.h"
 
 void NeuronSpeedTest(uint iterations, uint inputLength, ActivationFunctionPtr actFunction);
+void LayerSpeedTest(uint iterations, uint inputLength, uint neuronsCount, ActivationFunctionPtr actFunction);
 
 #endif
