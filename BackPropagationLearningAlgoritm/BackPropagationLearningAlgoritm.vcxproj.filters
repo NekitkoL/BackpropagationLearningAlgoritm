@@ -44,7 +44,10 @@
     <ClCompile Include="SpeedTests.h">
       <Filter>Заголовочные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SpeedTests.cpp">
+    <ClCompile Include="ActivationFunctions.c">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpeedTests.c">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>

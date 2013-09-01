@@ -8,28 +8,14 @@
 #include <math.h>
 
 //Computes value of logistic activation function.
-double LogisticActivationFunction(double arg)
-{
-	return 1 / (1 + exp( - LOGISTIC_ALPHA * arg));
-}
+double LogisticActivationFunction(double arg);
 
-double FirstDerivativeOfLogActivationFunction(double arg)
-{
-	double fValue = LogisticActivationFunction(arg);
-	return LOGISTIC_ALPHA * fValue * (1 - fValue);
-}
+double FirstDerivativeOfLogActivationFunction(double arg);
 
 //Computes value of activation function hyperbolic tan.
-double HyperbolicTanActFunction(double arg)
-{
-	return TAN_ALPHA * tanh(arg * TAN_BETA);
-}
+double HyperbolicTanActFunction(double arg);
 
 //Computes the first derivative of activation function hyperbolic tan
-double FirstDerivativeOfHyperbolicTanActivationFunction(double arg)
-{
-	double fValue = HyperbolicTanActFunction(arg);
-	return (TAN_BETA * (TAN_ALPHA - fValue) * (TAN_ALPHA + fValue))/TAN_ALPHA;
-}
+double FirstDerivativeOfHyperbolicTanActivationFunction(double arg);
 
 #endif
