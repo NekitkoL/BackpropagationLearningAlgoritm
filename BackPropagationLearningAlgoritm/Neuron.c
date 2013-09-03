@@ -41,6 +41,7 @@ double ComputeNeuronOutput(Neuron* neuron, double* inputVector)
 {
 	Adder(neuron, inputVector);
 	neuron->LastOutput = neuron->actFunction(neuron->LastSumValue);
+	return neuron->LastOutput;
 }
 
 
