@@ -3,15 +3,13 @@
 #include <stdio.h>
 #include "SpeedTests.h"
 #include "ActivationFunctions.h"
+#include "Types.h"
+#include "Helpers.h"
 
-void StartTests()
-{
-	NeuronSpeedTest(100000, 1000, HyperbolicTanActFunction);
-	LayerSpeedTest(60000, 433, 100, HyperbolicTanActFunction);
-}
+
 
 void main()
 {
-	StartTests();
+	LayerSpeedTest(1000, 443, 1000, HyperbolicTanActFunction);
 	system("pause");
 }

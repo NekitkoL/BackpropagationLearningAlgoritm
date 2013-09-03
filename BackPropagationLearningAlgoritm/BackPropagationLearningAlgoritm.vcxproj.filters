@@ -29,9 +29,6 @@
     <ClInclude Include="Layer.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="MultiLayerNetwork.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -53,9 +50,6 @@
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
     <ClCompile Include="Layer.c">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="MultiLayerNetwork.c">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
