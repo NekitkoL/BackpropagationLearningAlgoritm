@@ -10,6 +10,6 @@
 
 void main()
 {
-	LayerSpeedTest(1000, 443, 1000, HyperbolicTanActFunction);
+	NETSpeedTest(10000, 443, 5, 2000, HyperbolicTanActFunction);
 	system("pause");
 }
